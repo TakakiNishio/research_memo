@@ -1,0 +1,30 @@
+
+*** research theme ********************
+
+dynamics control + grasp planning
+
+          object localization
+          (watson network project)
+
+search on conference papers and Google scholar
+read the article and implimant it
+
+***************************************
+
+
+*** motoman project *******************
+
+"freenect2" is not needed for simulation.
+"PCL" is needed to install http://pointclouds.org/downloads/linux.html
+
+  after install PCL:
+      sudo apt-get install
+      sudo apt-get upgrade 
+
+roslaunch motoman_gazebo sia5_empty_world.launch
+rqt
+joint trajectory controller  #action lib
+
+***************************************
+
+

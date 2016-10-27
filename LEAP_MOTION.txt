@@ -1,0 +1,29 @@
+How to run Leap Motion on Ubuntu14.04
+
+User regist: LEAP MOTION DEVELOPER
+
+Download files
+https://developer.leapmotion.com/v2?id=skeletal-beta&platform=linux&version=2.2.7.30199
+
+extract them
+
+*****
+$ cd LeapDeveloperKit_2.2.7+30199_linux
+$ sudo dpkg -i Leap-2.2.7+30199-x64.deb
+*****
+$ sudo service leapd start
+*****
+$ LeapControlPanel
+*****
+$ Visualizer
+*****
+
+for ROS, visit:https://github.com/ros-drivers/leap_motion
+
+export PYTHONPATH=$PYTHONPATH:$HOME/Downloads/LeapDeveloperKit_2.2.7+30199_linux/LeapSDK/lib/:$HOME/Downloads/LeapDeveloperKit_2.2.7+30199_linux/LeapSDK/lib/x64
+
+after all,
+$ sudo service leapd stop
+$ sudo dpkg --purge --force-all leap
+
+
