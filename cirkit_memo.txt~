@@ -22,20 +22,3 @@ $ git commit -m "rename filename third_robot.urdf to cirkit_unit03.urdf"
 
 ・push to branch
 $ git push origin fix-discription-file
-
-
-urdf
- cirkit_unit03.gazebo〆      cirkit_unit03.xacro〆
- cirkit_unit03_macro.xacro〆  materials.xacro〆
- cirkit_unit03.urdf〆
-
-launch
- cirkit_unit03_description_demo2.launch 〆
- cirkit_unit03_description_demo.launch 〆
- cirkit_unit03.launch〆
- cirkit_unit03_only_robot.rviz 〆
- cirkit_unit03_run.rviz 〆
- cirkit_unit03.rviz　〆
- cirkit_unit03_xacro.launch 〆
-
-
