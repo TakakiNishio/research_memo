@@ -1,5 +1,5 @@
 
-*** research theme ********************
+*** old research theme *****************
 
 dynamics control + grasp planning
 
@@ -11,6 +11,12 @@ read the article and implimant it
 
 ***************************************
 
+*** current research theme *************
+
+glasp planning for multi-shape objects
+using neural network
+
+***************************************
 
 *** motoman project *******************
 
