@@ -1,0 +1,25 @@
+;; This buffer is for notes you don't want to save, and for Lisp evaluation.
+;; If you want to create a file, visit that file with C-x C-f,
+;; then enter the text in that file's own buffer.
+
+source src/motoman_project/scripts/install_libfreenect2.sh
+
+beignet-dev is already the newest version.
+The following packages were automatically installed and are no longer required:
+  libjpeg62 libllvm3.6:i386 libntdb1 libxcb-composite0 libxcb-xv0
+  linux-headers-4.2.0-27 linux-headers-4.2.0-27-generic linux-headers-4.2.0-36
+  linux-headers-4.2.0-36-generic linux-image-4.2.0-27-generic
+  linux-image-4.2.0-36-generic linux-image-extra-4.2.0-27-generic
+  linux-image-extra-4.2.0-36-generic linux-signed-image-4.2.0-36-generic
+  python-ntdb vlc-plugin-notify vlc-plugin-pulse
+Use 'apt-get autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 470 not upgraded.
+mkdir: cannot create directory 'libs': Permission denied
+bash: cd: libs: No such file or directory
+fatal: could not create work tree dir 'libfreenect2'.: Permission denied
+bash: cd: libfreenect2: No such file or directory
+mkdir: cannot create directory 'build': Permission denied
+CMake Error: The source directory "/" does not appear to contain CMakeLists.txt.
+Specify --help for usage, or press the help button on the CMake GUI.
+make: *** No targets specified and no makefile found.  Stop.
+make: *** No rule to make target `install'.  Stop.

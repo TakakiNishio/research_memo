@@ -1,0 +1,8 @@
+disc: 64 bit linux version
+
+$ cd /media/floppy0/
+$ sudo ./install
+
+check box: "use a File Installation Key"
+
+usb location: /media/"user_name"/F0DF-96E7
