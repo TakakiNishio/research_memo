@@ -1,0 +1,14 @@
+Tasks:
+1. GPU
+2. focus my problem
+3. creating dataset
+4. grasping figure
+
+Study:
+1. paper
+2. neural networks
+3. C++
+4. ROS
+5. GraspIt
+6. zotero
+7. cprofile
