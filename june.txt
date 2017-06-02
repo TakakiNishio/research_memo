@@ -1,0 +1,20 @@
+Tasks:
+0. Web page
+1. taking depth images using the Kinect
+2. focus my problem
+3. creating dataset
+4. grasping figure
+5. GPU
+
+Study:
+1. paper
+2. neural networks
+     basic theory
+     Auto encoder
+3. C++
+4. ROS
+5. GraspIt
+6. zotero
+7. cprofile
+
+Writing the paper for conference..
