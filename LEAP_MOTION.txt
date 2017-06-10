@@ -1,15 +1,24 @@
 How to run Leap Motion on Ubuntu14.04
 
 User regist: LEAP MOTION DEVELOPER
+software version=2.2.7
+
+*****
+$ cd Documents
+$ mkdir leap
+*****
 
 Download files
 https://developer.leapmotion.com/v2?id=skeletal-beta&platform=linux&version=2.2.7.30199
+version=2.2.7
 
-extract them
+Extract them in Documents/leap.
 
 *****
-$ cd LeapDeveloperKit_2.2.7+30199_linux
+$ cd Documents/leap/LeapDeveloperKit_2.2.7+30199_linux
 $ sudo dpkg -i Leap-2.2.7+30199-x64.deb
+If the error is occurred...
+$ sudo dpkg --ignore-depends=libgl1-mesa-glx --install Leap-2.2.7+30199-x64.deb
 *****
 $ sudo service leapd start
 *****
@@ -20,10 +29,20 @@ $ Visualizer
 
 for ROS, visit:https://github.com/ros-drivers/leap_motion
 
-export PYTHONPATH=$PYTHONPATH:$HOME/Downloads/LeapDeveloperKit_2.2.7+30199_linux/LeapSDK/lib/:$HOME/Downloads/LeapDeveloperKit_2.2.7+30199_linux/LeapSDK/lib/x64
+*****
+$ cd ~/catkin_ws/src
+$ git clone https://github.com/warp1337/rosleapmotion.git
+$ cd ~/catkin_ws && catkin_make
+*****
+$ roscore
+*****
+$ export PYTHONPATH=$PYTHONPATH:$HOME/Documents/leap/LeapDeveloperKit_2.2.7+30199_linux/LeapSDK/lib/:$HOME/Documents/leap/LeapDeveloperKit_2.2.7+30199_linux/LeapSDK/lib/x64
+*****
+$ source ~/catkin_ws/devel/setup.bash && rosrun leap_motion sender.py
+*****
+$ source ~/catkin_ws/devel/setup.bash && rosrun leap_motion subscriber.py
+*****
 
 after all,
 $ sudo service leapd stop
-$ sudo dpkg --purge --force-all leap
-
 

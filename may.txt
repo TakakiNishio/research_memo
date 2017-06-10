@@ -1,4 +1,5 @@
 Tasks:
+0. Web page
 1. GPU
 2. focus my problem
 3. creating dataset
@@ -12,3 +13,5 @@ Study:
 5. GraspIt
 6. zotero
 7. cprofile
+
+Writing the paper for conference..
