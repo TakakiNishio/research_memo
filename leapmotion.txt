@@ -45,4 +45,4 @@ $ source ~/catkin_ws/devel/setup.bash && rosrun leap_motion subscriber.py
 
 after all,
 $ sudo service leapd stop
-
+$ sudo dpkg --purge --force-all leap
