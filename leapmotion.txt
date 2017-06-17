@@ -12,7 +12,7 @@ Download files
 https://developer.leapmotion.com/v2?id=skeletal-beta&platform=linux&version=2.2.7.30199
 version=2.2.7
 
-Extract them in Documents/leap.
+Extract them in Documents/leap.(here)
 
 *****
 $ cd Documents/leap/LeapDeveloperKit_2.2.7+30199_linux

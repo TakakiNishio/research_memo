@@ -1,0 +1,10 @@
+
+install chainer ver.1.18.0
+$ sudo pip unistall cupy
+$ sudo pip unistall chainer
+$ sudo pip install chainer=="1.18.0" --no-cache-dir
+
+install chainer ver.2.0.0
+$ sudo pip unistall chainer
+$ sudo pip install cupy
+$ pip install chainer --no-cache-dir
