@@ -1,0 +1,19 @@
+recover the deleted files
+
+install the package extundelete
+$ sudo apt-get install -y extundelete
+
+confrim the hardware location
+$ df -T
+
+confirm the rm command and time
+$ history
+
+execute the recover command
+$ sudo extundelete --after $(date +%s --date "2017-06-27 16:46") --restore-all /dev/sda6
+
+for more information, see:
+http://itc.st-sweet.com/288/linuxu-ubuntu-file-recovery/
+https://www.hbirds.net/linux/%E8%AA%A4%E3%81%A3%E3%81%A6%EF%BD%92%EF%BD%8D%E3%81%97%E3%81%9F%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%BE%A9%E5%85%83/24571
+
+
