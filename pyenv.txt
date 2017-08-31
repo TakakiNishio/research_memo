@@ -1,0 +1,55 @@
+
+install pyenv+anaconda
+
+http://qiita.com/sk427/items/9f215931c8249ada75cd
+
+$ git clone https://github.com/yyuu/pyenv.git ~/.pyenv
+$ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+$ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+$ echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+$ source ~/.bashrc
+$ pyenv install -l | grep ana
+$ pyenv install anaconda3-4.4.0
+$ pyenv rehash
+$ pyenv shell anaconda3-4.4.0
+$ export PATH=/path/to/anaconda3/bin:$PATH
+$ conda update conda
+
+
+install pyenv-virtualenv
+
+$ git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
+$ echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
+$ source ~/.bashrc
+
+
+create python3 virtual environment
+
+$ conda create -n py3 python=3.5 numpy scipy pandas jupyter
+
+
+swith to python2 (system)
+
+$ pyenv shell system
+or
+$ pyenv global system
+
+
+swith to python3 (anaconda)
+
+$ pyenv shell anaconda3-4.4.0/envs/py3
+or
+$ pyenv grobal anaconda3-4.4.0/envs/py3
+
+$ conda install -c menpo opencv3
+
+($ source activate py3)
+$ pip install chainer=="1.17.0"
+($ source deactivate)
+
+$ conda install pillow
+
+confirm python version
+
+$ pyenv versions
+
