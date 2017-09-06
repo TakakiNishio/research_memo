@@ -16,6 +16,7 @@ $ export PATH=/path/to/anaconda3/bin:$PATH
 $ conda update conda
 
 
+
 install pyenv-virtualenv
 
 $ git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
@@ -23,9 +24,11 @@ $ echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
 $ source ~/.bashrc
 
 
+
 create python3 virtual environment
 
 $ conda create -n py3 python=3.5 numpy scipy pandas jupyter
+
 
 
 swith to python2 (system)
@@ -33,6 +36,7 @@ swith to python2 (system)
 $ pyenv shell system
 or
 $ pyenv global system
+
 
 
 swith to python3 (anaconda)
@@ -43,13 +47,41 @@ $ pyenv grobal anaconda3-4.4.0/envs/py3
 
 $ conda install -c menpo opencv3
 
-($ source activate py3)
-$ pip install chainer=="1.17.0"
-($ source deactivate)
 
-$ conda install pillow
 
 confirm python version
 
 $ pyenv versions
+
+
+
+setup python3 environment
+
+install chainer
+
+($ source activate py3)
+$ pip install chainer=="1.17.0"
+($ source deactivate)
+
+
+install PIL
+
+$ conda install pillow
+
+
+install OpenCV 3.2.0
+
+$ cd
+$ git clone git@github.com:conda-forge/opencv-feedstock.git
+$ cd opencv-feedstock/recipe
+
+modify build.sh
+'''
+-DWITH_FFMPEG=1
+'''
+
+$ conda build recipe/ --numpy 1.11
+$ conda install --use-local opencv
+($ sudo apt-get install libopenblas-base)
+$ conda upgrade numpy
 
