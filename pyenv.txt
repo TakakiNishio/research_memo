@@ -24,11 +24,14 @@ $ echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
 $ source ~/.bashrc
 
 
-
 create python3 virtual environment
 
 $ conda create -n py3 python=3.5 numpy scipy pandas jupyter
 
+
+delete python3 virtual environment
+
+$ conda remove -n py3 --all
 
 
 swith to python2 (system)
@@ -44,8 +47,6 @@ swith to python3 (anaconda)
 $ pyenv shell anaconda3-4.4.0/envs/py3
 or
 $ pyenv grobal anaconda3-4.4.0/envs/py3
-
-$ conda install -c menpo opencv3
 
 
 
@@ -69,6 +70,11 @@ install PIL
 $ conda install pillow
 
 
+install matplotlib
+
+$ conda install matplotlib
+
+
 install OpenCV 3.2.0
 
 $ cd
@@ -84,4 +90,3 @@ $ conda build recipe/ --numpy 1.11
 $ conda install --use-local opencv
 ($ sudo apt-get install libopenblas-base)
 $ conda upgrade numpy
-
