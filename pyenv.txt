@@ -74,6 +74,12 @@ install matplotlib
 
 $ conda install matplotlib
 
+install ffmpeg
+
+$ git clone https://github.com/conda/conda-recipes.git
+$ cd conda-recipes
+$ conda build x264
+$ conda build ffmpeg
 
 install OpenCV 3.2.0
 
@@ -85,8 +91,12 @@ modify build.sh
 '''
 -DWITH_FFMPEG=1
 '''
-
+$ conda install -n root conda-build
 $ conda build recipe/ --numpy 1.11
 $ conda install --use-local opencv
 ($ sudo apt-get install libopenblas-base)
 $ conda upgrade numpy
+
+OR
+
+https://github.com/conda-forge/opencv-feedstock/
